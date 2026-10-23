@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mwansa Jonathan Musenge | Information Security & Computer Forensics</title>
+<meta name="description" content="Third-year Information Security and Computer Forensics student in Zambia. Network reconnaissance, password auditing, Linux monitoring, PHP and Flutter development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">MJM</a>
+  <nav aria-label="Main">
+    <a href="#lab">Lab</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="role">Information Security &amp; Computer Forensics student</p>
+      <h1>Mwansa Jonathan Musenge</h1>
+      <p class="lead">Third-year student with hands-on work in network reconnaissance, password auditing, document analysis and Linux monitoring. I also build PHP and Flutter applications. I am looking for a cybersecurity or digital forensics internship.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="Mwansa_Jonathan_Musenge_CV_Black_White.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="photo.jpg" alt="Portrait of Mwansa Jonathan Musenge smiling, wearing sunglasses and a black t-shirt" width="900" height="1060">
+      <figcaption>Lusaka, Zambia &middot; Open to internships</figcaption>
+    </figure>
+  </section>
+
+  <section id="training" class="wrap block">
+    <h2>Security training</h2>
+    <div class="split">
+      <div>
+        <h3>NetworkWalks</h3>
+        <p class="meta">Cybersecurity internship training, 2026</p>
+      </div>
+      <div>
+        <p>Practical assignments in designated training environments, each documented with screenshots, command logs and technical findings.</p>
+        <ul>
+          <li>Network scanning, service enumeration and web reconnaissance with Nmap/Zenmap, Gobuster and curl.</li>
+          <li>Scripts, evidence and investigation notes compiled into structured GitHub submissions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="lab" class="wrap block">
+    <h2>Investigation lab</h2>
+    <article class="case">
+      <div class="case-head">
+        <h3>Mediroza Hospital</h3>
+        <p class="meta">Black-box practice assessment &middot; NetworkWalks assignment against an intentionally created practice website</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Extract.</strong> Pulled hashes from three encrypted PDFs with pdf2john and fixed a hash-format issue so John the Ripper could load them.</li>
+        <li><strong>Recover.</strong> Cracked all three weak passwords with a dictionary attack, then extracted the document text with pdftotext.</li>
+        <li><strong>Analyse.</strong> Read the PDF metadata with pdfinfo, followed a backup-location clue and found an exposed SQL backup holding simulated HR and shareholder records.</li>
+        <li><strong>Report.</strong> Recorded commands, outputs and screenshots to support findings on weak passwords and exposed backup files.</li>
+      </ol>
+    </article>
+
+    <article class="case">
+      <div class="case-head">
+        <h3>Independent security lab</h3>
+        <p class="meta">VMware, Linux and Wazuh</p>
+      </div>
+      <ul class="plain">
+        <li>Built virtual environments with Kali Linux, Ubuntu, Ubuntu Server and intentionally vulnerable practice machines. Configured NAT and troubleshot connectivity.</li>
+        <li>Configured Linux auditd to watch changes to the SSH configuration and verified the recorded events with ausearch.</li>
+        <li>Worked through Wazuh indexer and manager installation on Ubuntu, building familiarity with SIEM/XDR deployment.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="projects" class="wrap block">
+    <h2>Selected projects</h2>
+    <div class="projects">
+      <article>
+        <h3>AegisZ Sentinel</h3>
+        <p class="meta">Cyber situational awareness platform</p>
+        <p>PHP/MySQL MVC dashboard with audit logging and modules for assets, indicators, threats, alerts and incidents. Includes ingestion workers for URLhaus, OTX, NVD and CISA KEV.</p>
+        <p class="tags">PHP &middot; MySQL &middot; MVC</p>
+      </article>
+      <article>
+        <h3>UrbanCart</h3>
+        <p class="meta">E-commerce platform for Zambia</p>
+        <p>Store workflows, customer accounts, inventory and staff permissions. Set up transactional emails and solved shared-hosting deployment and mobile usability issues.</p>
+        <p class="tags">PHP &middot; MySQL</p>
+      </article>
+      <article>
+        <h3>InternLink</h3>
+        <p class="meta">Student task marketplace</p>
+        <p>Flutter/Dart app that connects companies and students. Prepared Android release builds and set up Google Play Console closed testing.</p>
+        <p class="tags">Flutter &middot; Dart &middot; Android</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap block">
+    <h2>Technical skills</h2>
+    <dl class="skills">
+      <div><dt>Security tools &amp; environments</dt><dd>Nmap/Zenmap, Gobuster, curl, John the Ripper, pdf2john, pdfinfo, pdftotext, auditd, Kali Linux, Ubuntu, Windows, VMware</dd></div>
+      <div><dt>Networking &amp; security foundations</dt><dd>OSI/TCP-IP, DNS, ARP, TCP/UDP, subnetting, NAT, access control, least privilege, separation of duties, incident handling, IT audit concepts</dd></div>
+      <div><dt>Development &amp; documentation</dt><dd>PHP OOP, MySQL/PDO, HTML, CSS, JavaScript, Flutter/Dart, Git/GitHub, technical reporting, evidence organisation, troubleshooting</dd></div>
+    </dl>
+  </section>
+
+  <section id="education" class="wrap block">
+    <h2>Education &amp; certificates</h2>
+    <div class="split">
+      <div>
+        <h3>Information and Communications University</h3>
+        <p class="meta">BSc Information Security and Computer Forensics<br>Third year, in progress, 2026</p>
+      </div>
+      <p>Coursework: Computer Hacking Forensic Investigation I &amp; II, Information Systems Security, Information Systems Audit, Network Security Administration I, LAN/MAN Administration, Operating Systems, Database Management System.</p>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Sanje High School</h3>
+        <p class="meta">2022</p>
+      </div>
+      <p>School Certificate examination: passed all seven subjects, including English, Mathematics and Science.</p>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Certificates</h3>
+      </div>
+      <ul class="plain">
+        <li><strong>Introduction to Cybersecurity</strong><br>Cisco Networking Academy, course completion, 24 December 2025</li>
+        <li><strong>Web Pentesting Mastery &ndash; Hack</strong><br>DevTown with Google Developer Groups &ndash; CSMU, bootcamp participation and project completion, 4 August 2026</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Looking for an intern in security or forensics?</h2>
+      <p>I am based in Lusaka, Zambia. Reach me through the links below.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/Mwansamusenge75">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/mwansa-jonathan-musenge-5b21a7253">LinkedIn</a>
+        <a class="btn" href="mailto:mwansa.musenge75@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">&copy; 2026 Mwansa Jonathan Musenge</footer>
+</body>
+</html>
